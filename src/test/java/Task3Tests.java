@@ -10,6 +10,7 @@ public class Task3Tests {
 
     @Test
     public void checkStatusCode(){
+
         int statusCode= given()
                         .when()
                         .get(booksURI)

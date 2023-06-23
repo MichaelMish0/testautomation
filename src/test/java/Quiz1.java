@@ -10,6 +10,7 @@ import java.time.Duration;
 import java.util.List;
 
 public class Quiz1 {
+
     WebDriver driver;
    public Quiz1(){
        WebDriverManager.chromedriver().setup();

@@ -9,6 +9,7 @@ import static io.restassured.RestAssured.given;
 
 @Epic("Quiz Tests")
 public class Quiz2 {
+
     String userURI="https://bookstore.toolsqa.com/Account/v1/User";
     String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
 

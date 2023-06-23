@@ -14,6 +14,7 @@ import java.util.List;
 
 
 public class Task2Tests {
+
     WebDriver driver;
     public Task2Tests() {
         WebDriverManager.chromedriver().setup();
