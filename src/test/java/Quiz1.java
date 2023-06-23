@@ -39,17 +39,14 @@ public class Quiz1 {
         WebElement title = driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/label"));
         Assert.assertEquals(title.getText(), "Git Pocket Guide");
 
-        //Step:Add to your collection
         WebElement addCollection = driver.findElement(By.id("addNewRecordButton"));
         addCollection.click();
         String msg = driver.switchTo().alert().getText();
         Assert.assertEquals(msg,"Book already present in the your collection!");
 
-        //Step:Back To Book Store
         bookStore.click();
         Assert.assertEquals(books.size() , 8);
 
-        //Step:Log out
         WebElement logout = driver.findElement(By.id("submit"));
         logout.click();
 
